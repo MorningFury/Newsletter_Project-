@@ -1,0 +1,101 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-size:  16px;
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#card {
+    display: grid;
+    width: 62.5%;
+    height: 82.5vh;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+   
+}
+
+#image {
+    padding: 20px;
+    overflow: hidden;
+    background-color: hidden;
+
+}
+
+img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#info {
+    display: grid;
+    grid-template-rows: 20% 15% 30% 30%;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 50px;
+} 
+
+form {
+    display: grid;
+    grid-template-rows:  15% 40% 40%;
+    width: 100%;
+    height: 100%;
+}
+
+input, button {
+    margin: 10px 0;
+}
+
+button {
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+/* 
+ul li {
+   list-style: none;
+} */
+
+h1, p {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+
+.list-items> img {
+    display: inline;
+    width: 20px;
+    height: 20px;
+}
+
+.list-items {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    width: 100%;
+    padding: 0.5em;
+    margin-left: -1.1rem;
+}
+
+.lists {
+    white-space: nowrap;
+
+}
+
