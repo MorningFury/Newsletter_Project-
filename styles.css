@@ -33,7 +33,7 @@ body {
 
 }
 
-img {
+#responsive-img-desktop {
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -64,12 +64,25 @@ button {
     background-color: hsl(234, 29%, 20%);
     color: white;
     font-size: 1.2rem;
+    border-radius: 6px;
+}
+
+input {
     border-radius: 5px;
 }
-/* 
-ul li {
-   list-style: none;
-} */
+
+input::placeholder {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+input:hover, button:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+}
 
 h1, p {
     width: 100%;
@@ -77,6 +90,12 @@ h1, p {
 
 h1 {
     font-size: 4.5rem;
+    font-weight: 700;
+}
+
+p, .lists {
+    color: hsl(235, 18%, 26%);
+    font-weight: 400;
 }
 
 
@@ -96,6 +115,128 @@ h1 {
 
 .lists {
     white-space: nowrap;
+}
 
+#responsive-img-mobile {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        overflow: hidden;
+        justify-items: center;
+        align-items: center;
+        margin: unset;
+
+    }
+    #card {
+        display: grid;
+        width: 90%;
+        height: 95%;
+        background-color:  hsl(0, 0%, 100%);
+        grid-template-rows: 1fr 70%;
+        grid-template-columns: 1fr;
+        border-radius: unset;
+        overflow: hidden;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    #image {
+        grid-row: 1;
+        width: 100%;
+        height: 100%;
+        padding: unset;
+        overflow: hidden;
+        border-radius: 0 0 20px 20px;
+    }
+
+    #responsive-img-desktop {
+        display: none;
+    }
+
+    #responsive-img-mobile {
+        display: unset;
+    }
+
+    #info {
+        grid-row: 2;     
+    }
+
+    #info {
+        display: grid;
+        grid-template-rows: 15% 15% 30% 40%;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding: unset;
+        width: 280px;
+        height: 100%;
+    } 
+    
+    form {
+        display: grid;
+        grid-template-rows:  10% 35% 35%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    input, button {
+        margin: 10px 0;
+    }
+    
+    button {
+        background-color: hsl(234, 29%, 20%);
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 6px;
+    }
+    
+    input {
+        border-radius: 5px;
+    }
+    
+    h1, p {
+        width: 100%;
+        word-wrap: normal;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        padding: unset;
+    }
+    
+    p, .lists {
+        color: hsl(235, 18%, 26%);
+        font-weight: 400;
+        font-size: 1.1rem;
+        
+    }
+    
+    
+    .list-items> img {
+        display: inline;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .list-items {
+        display: grid;
+        grid-template-columns: 10% 1fr;
+        width: 100%;
+        padding: 0.5em;
+ 
+    }
+    
+    .lists {
+        white-space: nowrap;
+    }
+    
 }
 

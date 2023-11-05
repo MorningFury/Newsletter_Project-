@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script src="script.js"></script>
 </head>
 <body>
   <div id="card">
@@ -21,15 +22,16 @@
        <div class="list-items"><img src="./assets/images/icon-list.svg" alt="check-icons"><span class="lists">Measuring to ensure updates are a success</span></div> 
        <div class="list-items"><img src="./assets/images/icon-list.svg" alt="check-icons"><span class="lists">And much more</span></div> 
       </div>
-      <form action="#">
+      <form action="#" >
         <label for="email">Email address</label>
-        <input class="email" type="text" placeholder="email@company.com">
+        <input id="email" type="text" placeholder="email@company.com" autocomplete="email" required>
         <button>Subscribe to monthly newsletter</button>
       </form>
       
     </div>
     <div id="image">
-      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-image">
+      <img id="responsive-img-mobile" src="assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
+      <img id="responsive-img-desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-image">
     </div>
   </div>
 </body>
